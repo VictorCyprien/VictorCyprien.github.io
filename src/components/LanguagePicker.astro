@@ -1,0 +1,18 @@
+---
+import { flags } from '../i18n/ui';
+---
+
+
+<div class="languages">
+  {Object.entries(flags).map(([lang, label]) => (
+    <a href={`/${lang}/`}> {label} </a>
+  ))}
+</div>
+
+<style>
+
+  div{
+    font-size: 25px;
+  }
+
+</style>
