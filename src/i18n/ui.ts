@@ -13,12 +13,12 @@ export const defaultLang = 'fr';
 export const ui = {
   en: {
     'home': 'Home',
-    'work': 'Work',
+    'work': 'Projects',
     'about': 'About',
   },
   fr: {
     'home': 'Accueil',
-    'work': 'Travail',
+    'work': 'Projets',
     'about': 'À propos',
   },
 } as const;
@@ -26,12 +26,12 @@ export const ui = {
 export const links = {
   en: {
     'home': '/en',
-    'work': '/en/work',
+    'work': '/en/project',
     'about': '/en/about',
   },
   fr: {
     'home': '/fr',
-    'work': '/fr/travail',
+    'work': '/fr/projet',
     'about': '/fr/a_propos',
   },
 }
