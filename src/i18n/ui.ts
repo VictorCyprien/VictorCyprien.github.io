@@ -88,7 +88,7 @@ export const sendMail = {
   },
   fr : {
     "convinced": "Alors ?\nConvaincu ?",
-    "send": "Envoyer moi un message",
+    "send": "Envoyez-moi un message",
   }
 }
 
