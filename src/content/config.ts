@@ -1,7 +1,7 @@
 import { defineCollection, z } from 'astro:content';
 
 export const collectionsFrench = {
-	projet: defineCollection({
+	projets: defineCollection({
 		schema: z.object({
 			title: z.string(),
 			description: z.string(),
@@ -15,7 +15,7 @@ export const collectionsFrench = {
 
 
 export const collectionsEnglish = {
-	projet: defineCollection({
+	projects: defineCollection({
 		schema: z.object({
 			title: z.string(),
 			description: z.string(),
