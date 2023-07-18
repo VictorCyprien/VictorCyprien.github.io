@@ -1,6 +1,5 @@
 # Portfolio website created with Astro
 
-
 ```
 npm create astro@latest -- --template portfolio
 ```
