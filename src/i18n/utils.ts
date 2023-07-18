@@ -1,4 +1,4 @@
-import { ui, links, defaultLang } from './ui';
+import { ui, links, defaultLang, projectLinks } from './ui';
 
 export function getLangFromUrl(url: URL) {
   const [, lang] = url.pathname.split('/');
@@ -15,6 +15,12 @@ export function useTranslations(lang: keyof typeof ui) {
 export function buildLinks(lang: keyof typeof links) {
   return function t(key: keyof typeof links[typeof defaultLang]) {
     return links[lang][key] || links[defaultLang][key];
+  }
+}
+
+export function buildLinksProject(lang: keyof typeof projectLinks) {
+  return function t(key: keyof typeof projectLinks[typeof defaultLang]) {
+    return projectLinks[lang][key] || projectLinks[defaultLang][key];
   }
 }
 

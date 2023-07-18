@@ -30,8 +30,20 @@ export const links = {
     'about': '/en/about',
   },
   fr: {
-    'home': '/',
+    'home': '/fr',
     'work': '/fr/travail',
     'about': '/fr/a_propos',
   },
+}
+
+
+export const projectLinks = {
+  en: {
+    "work": "/en/project",
+    "project_nameing": "project",
+  },
+  fr : {
+    "work": "/fr/projet",
+    "project_nameing": "projet",
+  }
 }
