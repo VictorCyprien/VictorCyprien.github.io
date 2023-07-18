@@ -2,18 +2,24 @@
 import Icon from './Icon.astro';
 import LanguagePicker from './LanguagePicker.astro';
 const currentYear = new Date().getFullYear();
+
+import { getLangFromUrl, buildFooterText } from '../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const footer = buildFooterText(lang);
 ---
 
 <footer>
 	<div class="group">
 		<p>
-			Designed & Developed in Portland with <a href="https://astro.build/">Astro</a>
+			{`${footer("created")}`} <a href="https://astro.build/">Astro</a>
 			<Icon icon="rocket-launch" size="1.2em" />
 		</p>
-		<p>&copy; {currentYear} Jeanine White</p>
+		<p>&copy; {currentYear} Victor CYPRIEN</p>
 	</div>
 	<p class="socials">
-		<a href="https://github.com/me"> GitHub</a>
+		<a href="https://github.com/VictorCyprien"> GitHub</a>
+		<a href="https://www.linkedin.com/in/victor-cyprien-7b2a36173"> LinkedIn</a>
 	</p>
 	<LanguagePicker />
 </footer>

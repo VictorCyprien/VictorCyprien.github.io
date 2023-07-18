@@ -6,10 +6,10 @@ const lang = getLangFromUrl(Astro.url);
 const projetLinks = buildLinksProject(lang);
 
 interface Props {
-	project: CollectionEntry<'project'>;
+	projects: CollectionEntry<'projects'>;
 }
 
-const { data, slug } = Astro.props.project;
+const { data, slug } = Astro.props.projects;
 
 ---
 
