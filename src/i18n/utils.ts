@@ -1,4 +1,4 @@
-import { ui, links, defaultLang, projectLinks, aboutMe , sendMail, footerText } from './ui';
+import { ui, titleHtml, links, defaultLang, projectLinks, aboutMe , sendMail, footerText } from './ui';
 
 export function getLangFromUrl(url: URL) {
   const [, lang] = url.pathname.split('/');
@@ -9,6 +9,12 @@ export function getLangFromUrl(url: URL) {
 export function useTranslations(lang: keyof typeof ui) {
   return function t(key: keyof typeof ui[typeof defaultLang]) {
     return ui[lang][key] || ui[defaultLang][key];
+  }
+}
+
+export function buildTitleHtml(lang: keyof typeof titleHtml) {
+  return function t(key: keyof typeof titleHtml[typeof defaultLang]) {
+    return titleHtml[lang][key] || titleHtml[defaultLang][key];
   }
 }
 

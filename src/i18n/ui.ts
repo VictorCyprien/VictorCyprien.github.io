@@ -23,6 +23,18 @@ export const ui = {
   },
 } as const;
 
+
+export const titleHtml = {
+  en : {
+    'title': "Victor CYPRIEN - Back-end developer",
+    'description': "Portfolio of Victor CYPRIEN, Back-end developer",
+  },
+  fr : {
+    'title': "Victor CYPRIEN - Développeur Back-end",
+    'description': "Portfolio de Victor CYPRIEN, développeur Back-end",  
+  }
+}
+
 export const links = {
   en: {
     'home': '/en',

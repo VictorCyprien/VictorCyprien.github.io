@@ -7,10 +7,15 @@ interface Props {
 }
 
 // TODO : Set langague to title and desc
+import { getLangFromUrl, buildTitleHtml} from '../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const html = buildTitleHtml(lang);
+
 
 const {
-	title = 'Victor CYPRIEN - Développeur Back-end',
-	description = 'Portfolio de Victor CYPRIEN, développeur Back-end',
+	title = html("title"),
+	description = html("description"),
 } = Astro.props;
 ---
 
