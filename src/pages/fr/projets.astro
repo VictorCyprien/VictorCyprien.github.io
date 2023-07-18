@@ -8,14 +8,14 @@ import PortfolioPreview from '../../components/PortfolioPreviewFR.astro';
 import Hero from '../../components/Hero.astro';
 import Grid from '../../components/Grid.astro';
 
-const projects = (await getCollection('projet')).sort(
+const projets = (await getCollection('projets')).sort(
 	(a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf()
 );
 ---
 
 <BaseLayout
-	title="My Work | Jeanine White"
-	description="Learn about Jeanine White's most recent projects"
+	title="Mon travail | Victor CYPRIEN"
+	description="Découvrez les projets les plus récents de Victor CYPRIEN"
 >
 	<div class="stack gap-20">
 		<main class="wrapper stack gap-8">
@@ -26,9 +26,9 @@ const projects = (await getCollection('projet')).sort(
 			/>
 			<Grid variant="offset">
 				{
-					projects.map((project) => (
+					projets.map((project) => (
 						<li>
-							<PortfolioPreview project={project} />
+							<PortfolioPreview projets={project} />
 						</li>
 					))
 				}
