@@ -89,6 +89,18 @@ export const projectLinks = {
 }
 
 
+export const serviceLinks = {
+  en: {
+    "work": "/en/services",
+    "service_nameing": "services",
+  },
+  fr : {
+    "work": "/fr/services",
+    "service_nameing": "services",
+  }
+}
+
+
 export const sendMail = {
   en :{
     "convinced": "Convinced ?",
