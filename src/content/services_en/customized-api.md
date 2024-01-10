@@ -2,7 +2,7 @@
 title: Creation of a customized API
 publishDate: 2024-01-10 11:00:00
 img: /assets/services/api.png
-img_alt: Image of a barbecue
+img_alt: Image showing API functions
 description: |
   Information about the custom API creation service
 tags:
