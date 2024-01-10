@@ -160,6 +160,22 @@ import Icon from '../../components/Icon.astro';
 </BaseLayout>
 
 <style>
+	:root {
+		--carrer-color : linear-gradient(to top, #d5dce9, #c9d1ef, #c7c3f3, #cdb3f1, #d9a0e9);
+		--timeline-panel-cross : #d9a0e9;
+		--education-color : linear-gradient(to top, #d5dce9, #c9d1ef, #c7c3f3, #cdb3f1, #d9a0e9);
+		--text-color: #000000;
+	}
+
+
+	:root.theme-dark {
+		--carrer-color : linear-gradient(to top, #393e46, #30415d, #284375, #24438b, #2d419f);
+		--timeline-panel-cross : #2d419f;
+		--education-color : linear-gradient(to top, #393e46, #30415d, #284375, #24438b, #2d419f);
+		--text-color: #FFFFFF;
+	}
+
+
 	.about {
 		display: flex;
 		flex-direction: column;
@@ -219,7 +235,7 @@ import Icon from '../../components/Icon.astro';
 	.timeline{
 		padding: 30px 10px;
 		position: relative;
-		color: #000;
+		color: var(--text-color);
 	}
 
 	.timeline:before{
@@ -302,12 +318,11 @@ import Icon from '../../components/Icon.astro';
 		width: 90%;
 		float: right;
 		margin-right: 40px;
-		border: 1px solid #e3e6ee;
 		border-radius: 7px;
 		padding: 20px 25px;
 		position: relative;
 		box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
-		background: #e3e6ee;
+		background-image: var(--carrer-color);
 	}
 
 	.timeline-panel-container-inverted .timeline-panel{
@@ -322,8 +337,8 @@ import Icon from '../../components/Icon.astro';
 		display: inline-block;
 		border: 2px solid #000;
 		border-top: 14px solid transparent;
-		border-left: 14px solid #e3e6ee;
-		border-right: 0 solid #e3e6ee;
+		border-left: 14px solid var(--timeline-panel-cross);
+		border-right: 0 solid var(--timeline-panel-cross);
 		border-bottom: 14px solid transparent;
 		content: " ";
 	}
@@ -342,7 +357,7 @@ import Icon from '../../components/Icon.astro';
 	}
 
 	.timeline-heading h4{
-		color: #000;
+		color: var(--text-color);
 	}
 
 	#education{
@@ -365,14 +380,13 @@ import Icon from '../../components/Icon.astro';
 		margin: 0 auto;
 		text-align: center;
 		padding: 30px;
-		background: #e3e6ee;
+		background: var(--education-color);
 		border-radius: 10px;
-		border: 2px solid #e3e6ee;
 		margin-bottom: 20px;
 	}
 
 	.education-block h5{
-		color: #000;
+		color: var(--text-color);
 		font-size: 15px;
 		margin-bottom: 15px;
 	}
@@ -383,17 +397,17 @@ import Icon from '../../components/Icon.astro';
 	}
 
 	.education-block h3{
-		color: #000;
+		color: var(--text-color);
 	}
 
 	.education-block h4{
 		margin-bottom: 20px;
-		color: #000;
+		color: var(--text-color);
 	}
 
 	.education-block p{
 		font-weight: bold;
-		color: #000;
+		color: var(--text-color);
 	}
 
 	.education-block .divider-black{
