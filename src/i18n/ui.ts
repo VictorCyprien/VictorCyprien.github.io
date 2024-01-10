@@ -15,11 +15,15 @@ export const ui = {
     'home': 'Home',
     'work': 'Projects',
     'about': 'About',
+    'background': 'Career',
+    'services': 'Services',
   },
   fr: {
     'home': 'Accueil',
     'work': 'Projets',
     'about': 'À propos',
+    'background': 'Parcours',
+    'services': 'Services',
   },
 } as const;
 
@@ -38,12 +42,16 @@ export const titleHtml = {
 export const links = {
   en: {
     'home': '/en',
+    'background': '/en/carrer',
     'work': '/en/projects',
+    'services': '/en/services',
     'about': '/en/about',
   },
   fr: {
     'home': '/fr',
+    'background': '/fr/parcours',
     'work': '/fr/projets',
+    'services': '/fr/services',
     'about': '/fr/a_propos',
   },
 }
@@ -77,6 +85,18 @@ export const projectLinks = {
   fr : {
     "work": "/fr/projets",
     "project_nameing": "projets",
+  }
+}
+
+
+export const serviceLinks = {
+  en: {
+    "work": "/en/services",
+    "service_nameing": "services",
+  },
+  fr : {
+    "work": "/fr/services",
+    "service_nameing": "services",
   }
 }
 

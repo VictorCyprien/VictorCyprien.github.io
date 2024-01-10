@@ -1,0 +1,418 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+import ContactCTA from '../../components/ContactCTA.astro';
+import Hero from '../../components/Hero.astro';
+import Icon from '../../components/Icon.astro';
+---
+
+<BaseLayout title="Mon parcours | Victor CYPRIEN" description="Mon parcours">
+	<div class="stack gap-20">
+		<main class="wrapper about">
+			<Hero
+				title="Mon parcours"
+				tagline="Voici mes expériences professionels"
+			>
+		</main>
+		<div class="timeline">
+			<li>
+				<div class="timeline-panel-container">
+					<div class="timeline-panel">
+						<div class="timeline-heading">
+							<h3 class="company"><a href="https://www.beeguard.fr" target="_blank">BeeGuard</a> <Icon icon="beeguard-logo" size="40px" /></h3>
+							<h4 class="role">Apprenti Développeur Backend - Python</h4>
+							<p class="date">Septembre 2021 - Septembre 2023</p>
+						</div>
+						<div class="timeline-body">
+							<br>
+							<p class="mission">Mes Missions :</p>
+							<ul>
+								<li><Icon icon="circle-dot" size="9px" /> Planifier, développer, tester, déployer et maintenir les services backend</li>
+								<li><Icon icon="circle-dot" size="9px" /> Dépannage efficace et remédiation pour les services backend</li>
+								<li><Icon icon="circle-dot" size="9px" /> Création d'une API pour la gestion des utilisateurs et le stockage S3</li>
+								<li><Icon icon="circle-dot" size="9px" /> Refonte d'une architecture de notification par SMS</li>
+							</ul>
+							<br>
+							<p class="tech">Technologies utilisés :</p>
+							<ul>
+								<li><Icon icon="circle-dot" size="9px" /> Python</li>
+								<li><Icon icon="circle-dot" size="9px" /> Flask</li>
+								<li><Icon icon="circle-dot" size="9px" /> API REST</li>
+								<li><Icon icon="circle-dot" size="9px" /> Faust / Kafka</li>
+								<li><Icon icon="circle-dot" size="9px" /> AWS S3</li>
+								<li><Icon icon="circle-dot" size="9px" /> Threading</li>
+								<li><Icon icon="circle-dot" size="9px" /> VSCode</li>
+								<li><Icon icon="circle-dot" size="9px" /> Git</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="timeline-panel-container-inverted">
+					<div class="timeline-panel">
+						<div class="timeline-heading">
+							<h3 class="company"><a href="https://limayrac.fr/" target="_blank">Institut Limayrac</a> <Icon icon="limayrac-logo" size="35px" /></h3>
+							<h4 class="role">Développeur C# / Projet de BTS</h4>
+							<p class="date"> Janvier 2020 - Juin 2020</p>
+						</div>
+						<div class="timeline-body">
+							<br>
+							<p class="mission">Ma mission :</p>
+							<ul>
+								<li><Icon icon="circle-dot" size="9px" /> Chargé de créer un module Bluetooth Low Energy pour des trottinettes connectées</li>
+							</ul>
+							<br>
+							<p class="tech">Technologies utilisés :</p>
+							<ul>
+								<li><Icon icon="circle-dot" size="9px" /> GitHub</li>
+								<li><Icon icon="circle-dot" size="9px" /> Slack</li>
+								<li><Icon icon="circle-dot" size="9px" /> Visual Studio 2019</li>
+								<li><Icon icon="circle-dot" size="9px" /> C# Xamarin</li>
+								<li><Icon icon="circle-dot" size="9px" /> Azure</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="timeline-badge"><i class="fas fa-briefcase"></i></div>
+				<div class="timeline-panel-container">
+					<div class="timeline-panel">
+						<div class="timeline-heading">
+							<h3 class="company"><a href="https://www.kipsoft.fr/" target="_blank">KIPSOFT</a> <Icon icon="kipsoft-logo" size='25px' /></h3>
+							<h4 class="role">Stagiaire - Développeur PHP</h4>
+							<p class="date"><i class="far fa-clock"></i> Mai 2019 - Juin 2019</p>
+						</div>
+						<div class="timeline-body">
+							<br>
+							<p class="mission">Ma mission :</p>
+							<ul>
+								<li><Icon icon="circle-dot" size="9px" /> Création d’un plugin PHP pour le site web “Ma liste à moi” avec WordPress pour un client</li>
+							</ul>
+							<br>
+							<p class="tech">Technologies utilisés :</p>
+							<ul>
+								<li><Icon icon="circle-dot" size="9px" /> WordPress</li>
+								<li><Icon icon="circle-dot" size="9px" /> PHP</li>
+								<li><Icon icon="circle-dot" size="9px" /> BootStrap</li>
+								<li><Icon icon="circle-dot" size="9px" /> Slack</li>
+								<li><Icon icon="circle-dot" size="9px" /> BitBucket</li>
+								<li><Icon icon="circle-dot" size="9px" /> Git</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</li>
+		</div>
+		<div class="education">
+			<Hero
+				title="Mes formations"
+				tagline="Voici mes formations obtenus"
+			>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6">
+						<div>
+							<div class="education-block">
+								<h5>Septembre 2021 - Septembre 2023</h5>
+								<Icon icon="graduation" size="90px" color='black'/>
+								<h3>Institut Limayrac - Toulouse</h3>
+								<h4>Master Expert en Système d'Informations</h4>
+								<div class="divider-black"></div>
+							</div>
+						</div>
+						<div>
+							<div class="education-block">
+								<h5>Septembre 2020 - Septembre 2021</h5>
+								<Icon icon="graduation" size="90px" color='black'/>
+								<h3>Institut Limayrac - Toulouse</h3>
+								<h4>Bachelor Responsable de Projets Informatiques</h4>
+								<div class="divider-black"></div>
+							</div>
+						</div>
+						<div>
+							<div class="education-block">
+								<h5>2020</h5>
+								<Icon icon="graduation" size="90px" color='black'/>
+								<h3>Apprendre-a-coder.com</h3>
+								<h4>Formation Complète Développeur Web en ligne</h4>
+								<div class="divider-black"></div>
+								<p>Découverte et consolidation des langages du web</p>
+								<p>HTML/CSS JavaScript, JQuery, PHP, Responsive Design</p>
+							</div>
+						</div>
+						<div class="education-block">
+							<h5>Septembre 2018 - Juillet 2020</h5>
+							<Icon icon="graduation" size="90px" color='black'/>
+							<h3>Institut Limayrac - Toulouse</h3>
+							<h4>BTS Systèmes Numériques</h4>
+							<div class="divider-black"></div>
+							<p>Découverte des technologies</p>
+							<p>Mise en pratique dans des projets et dans un stage en fin de premiére année</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</div>
+	</div>
+</BaseLayout>
+
+<style>
+	:root {
+		--parcours-color : linear-gradient(to top, #d5dce9, #c9d1ef, #c7c3f3, #cdb3f1, #d9a0e9);
+		--timeline-panel-cross : #d9a0e9;
+		--education-color : linear-gradient(to top, #d5dce9, #c9d1ef, #c7c3f3, #cdb3f1, #d9a0e9);
+		--text-color: #000000;
+	}
+
+
+	:root.theme-dark {
+		--parcours-color : linear-gradient(to top, #393e46, #30415d, #284375, #24438b, #2d419f);
+		--timeline-panel-cross : #2d419f;
+		--education-color : linear-gradient(to top, #393e46, #30415d, #284375, #24438b, #2d419f);
+		--text-color: #FFFFFF;
+	}
+
+
+	.about {
+		display: flex;
+		flex-direction: column;
+		gap: 3.5rem;
+	}
+
+	img {
+		margin-top: 1.5rem;
+		border-radius: 1.5rem;
+		box-shadow: var(--shadow-md);
+	}
+
+	section {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+		color: var(--gray-200);
+	}
+
+	.section-title {
+		grid-column-start: 1;
+		font-size: var(--text-xl);
+		color: var(--gray-0);
+	}
+
+	.content {
+		grid-column: 2 / 4;
+	}
+
+	.content :global(a) {
+		text-decoration: 1px solid underline transparent;
+		text-underline-offset: 0.25em;
+		transition: text-decoration-color var(--theme-transition);
+	}
+
+	.content :global(a:hover),
+	.content :global(a:focus) {
+		text-decoration-color: currentColor;
+	}
+
+	@media (min-width: 50em) {
+		.about {
+			display: grid;
+			grid-template-columns: 1fr 60% 1fr;
+		}
+
+		.about > :global(:first-child) {
+			grid-column-start: 2;
+		}
+
+		section {
+			display: contents;
+			font-size: var(--text-lg);
+		}
+	}
+
+	.timeline{
+		padding: 30px 10px;
+		position: relative;
+		color: var(--text-color);
+	}
+
+	.timeline:before{
+		top: 0;
+		bottom: 0;
+		position: absolute;
+		content: " ";
+		width: 5px;
+		background: #6474a2;
+		left: 50%;
+		margin-left: -2.5px;
+		border-radius: 15%;
+	}
+
+	.company {
+		text-align: center; 
+		font-weight: bold; 
+	}
+
+	.role {
+		text-align: center; 
+		font-weight: bold;
+	}
+
+	.date{
+		text-align: center;
+	}
+
+	.mission {
+		text-align: center; 
+		font-weight: bold; 
+		text-decoration: underline
+	}
+
+	.tech {
+		text-align: center; 
+		font-weight: bold; 
+		text-decoration: underline
+	}
+
+	.timeline li{
+		list-style-type: none;
+		margin: 1px;
+		padding: 1px;
+	}
+
+	.timeline li:after{
+		clear: both;
+	}
+
+	.timeline li:before, .timeline li:after{
+		content: "";
+		display: table;
+	}
+
+	.timeline li .timeline-badge{
+		color: #000;
+		width: 50px;
+		line-height: 50px;
+		font-size: 20px;
+		text-align: center;
+		position: absolute;
+		top: 16px;
+		left: 50%;
+		margin-left: -25px;
+		background-color: #ddd;
+		border-radius: 50%;
+	}
+
+	.timeline-panel-container{
+		width: 50%;
+		float: left;
+	}
+
+	.timeline-panel-container-inverted{
+		width: 50%;
+		float: right;
+	}
+
+	.timeline-panel{
+		width: 90%;
+		float: right;
+		margin-right: 40px;
+		border-radius: 7px;
+		padding: 20px 25px;
+		position: relative;
+		box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+		background-image: var(--parcours-color);
+	}
+
+	.timeline-panel-container-inverted .timeline-panel{
+		float: left;
+		margin-left: 40px; 
+	}
+
+	.timeline-panel:after{
+		position: absolute;
+		top: 27px;
+		right: -14px;
+		display: inline-block;
+		border: 2px solid #000;
+		border-top: 14px solid transparent;
+		border-left: 14px solid var(--timeline-panel-cross);
+		border-right: 0 solid var(--timeline-panel-cross);
+		border-bottom: 14px solid transparent;
+		content: " ";
+	}
+
+	.timeline-panel-container-inverted .timeline-panel:after{
+		border-left-width: 0;
+		border-right-width: 14px;
+		left: -14px;
+		right: auto;
+	}
+
+	.timeline-heading h3{
+		margin-top: 5px;
+		font-size: 20px;
+		color: #000;
+	}
+
+	.timeline-heading h4{
+		color: var(--text-color);
+	}
+
+	#education{
+		background: #e3e6ee;
+	}
+
+	.col-sm-6{
+		flex:0 0 auto;
+		width:70%;
+		margin-left: auto;
+    	margin-right: auto;
+	}
+
+	#education .heading h2{
+		color: #e3e6ee;
+	}
+
+	.education-block{
+		width: 80%;
+		margin: 0 auto;
+		text-align: center;
+		padding: 30px;
+		background: var(--education-color);
+		border-radius: 10px;
+		box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+		margin-bottom: 20px;
+	}
+
+	.education-block h5{
+		color: var(--text-color);
+		font-size: 15px;
+		margin-bottom: 15px;
+	}
+
+	.education-block i{
+		font-size: 30px;
+	}
+
+	.education-block h3{
+		color: var(--text-color);
+	}
+
+	.education-block h4{
+		margin-bottom: 20px;
+		color: var(--text-color);
+	}
+
+	.education-block p{
+		font-weight: bold;
+		color: var(--text-color);;
+	}
+
+	.education-block .divider-black{
+		margin-bottom: 20px;
+	}
+
+</style>

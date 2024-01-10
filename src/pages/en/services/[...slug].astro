@@ -9,14 +9,14 @@ import Icon from '../../../components/Icon.astro';
 import Pill from '../../../components/Pill.astro';
 
 interface Props {
-	entry: CollectionEntry<'projets'>;
+	entry: CollectionEntry<'services_en'>;
 }
 
 // This is a dynamic route that generates a page for every Markdown file in src/content/
 // Read more about dynamic routes and this `getStaticPaths` function in the Astro docs:
 // https://docs.astro.build/en/core-concepts/routing/#dynamic-routes
 export async function getStaticPaths() {
-	const work = await getCollection('projets');
+	const work = await getCollection('services_en');
 	return work.map((entry) => ({
 		params: { slug: entry.slug },
 		props: { entry },
@@ -26,9 +26,9 @@ export async function getStaticPaths() {
 const { entry } = Astro.props;
 const { Content } = await entry.render();
 
-import { getLangFromUrl, buildLinksProject } from '../../../i18n/utils';
+import { getLangFromUrl, buildLinksService } from '../../../i18n/utils';
 const lang = getLangFromUrl(Astro.url);
-const projetLinks = buildLinksProject(lang);
+const serviceLinks = buildLinksService(lang);
 ---
 
 <BaseLayout title={entry.data.title} description={entry.data.description}>
@@ -36,7 +36,7 @@ const projetLinks = buildLinksProject(lang);
 		<div class="stack gap-15">
 			<header>
 				<div class="wrapper stack gap-2">
-					<a class="back-link" href={`${projetLinks("work")}/`}><Icon icon="arrow-left" /> Retour</a>
+					<a class="back-link" href={`${serviceLinks("work")}/`}><Icon icon="arrow-left" /> Return</a>
 					<Hero title={entry.data.title} align="start">
 						<div class="details">
 							<div class="tags">
