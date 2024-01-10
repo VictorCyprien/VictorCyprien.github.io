@@ -1,7 +1,7 @@
 ---
 title: Jisu Calenrondo
 publishDate: 2023-07-18 00:00:00
-img: /assets/stock-2.jpg
+img: /assets/neomuna.jpg
 img_alt: Image de Neomuna dans Destiny 2
 description: |
   Jisu Calenrondo est un bot discord qui informe les utilisateurs d'un serveur discord des dernières vidéos mise en ligne par des youtubeurs
