@@ -1,7 +1,7 @@
 ---
 title: Barbuc-API
 publishDate: 2023-07-18 00:00:00
-img: /assets/stock-1.jpg
+img: /assets/barbucue.jpg
 img_alt: Image d'un barbecue
 description: |
   Barbuc-Api est une API REST qui permet de gérer les utilisateurs et les barbecues.
