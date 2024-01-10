@@ -2,7 +2,7 @@
 title: Création d'une API sur-mesure
 publishDate: 2024-01-10 11:00:00
 img: /assets/services/api.png
-img_alt: Image d'un barbecue
+img_alt: Image représentant les fonctions d'une API
 description: |
   Informations sur le service de création d'API sur-mesure
 tags:
